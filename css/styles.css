@@ -1,0 +1,108 @@
+/* header text color #2E2F42 
+adress #434455
+web color #4D5AE5 */
+/* bgc #FFFFFF */
+/* body bgc #E5E5E5 */
+/* body color #2E2F42 */
+/* 2nd color #434455 */
+/* button text color #4D5AE5 bgc #E7E9FC  */
+/* btn bgc hover #404BBF text #FFFFFF  */
+
+:root{
+    --primary-text-color: #434455;
+    --title-color: #2E2F42;
+    --footer-text-color: #E7E9FC;
+    --active:#404BBF;
+    --background-color: #FFFFFF;
+
+}
+
+/* 1. header */
+
+/* logo */
+.list{
+    list-style: none;
+}
+.web{
+    color:#4D5AE5;
+    }
+
+.studio{
+    color: #2E2F42;
+}
+
+.link :active {
+    color:var(--active)
+}
+
+
+/* site nav */
+.site-nav a{
+    color: #2E2F42;
+}
+.site-nav a:hover {
+color: var(--active);
+}
+.site-nav a:focus {
+color: var(--active);
+}
+
+
+.contact-info a{
+    color:#434455;
+}
+.contact-info a:hover{
+color: var(--active);
+}
+.contact-info a:focus{
+    color: var(--active);
+}
+
+/* buttons */
+.button{
+    color:#FFFFFF ;
+    background-color: #4D5AE5;
+}
+.button:hover{
+    color: #FFFFFF;
+    background-color: var(--active);
+}
+.primary {
+
+}
+
+.secondary{
+
+}
+
+
+/* sections */
+.section-title{
+    color: var(--title-color);
+}
+p{
+    color: var(--primary-text-color);
+}
+.section{
+    background-color: var(--background-color);
+}
+.team{
+    background-color: #E5E5E5;
+}
+/* hero */
+.hero-title{
+color: var(--background-color);
+}
+.hero{
+    color: var(--footer-text-color);
+    background-color: #2E2F42;
+}
+.footer{
+    background-color: #2E2F42;
+}
+.footer p{
+    color: var(--footer-text-color);
+}
+.footer.studio{
+    color:#F4F4FD;
+}
