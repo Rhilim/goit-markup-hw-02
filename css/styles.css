@@ -15,25 +15,6 @@ web color #4D5AE5 */
   --active: #404bbf;
   --background-color: #ffffff;
 }
-/* Headers */
-h1{
-font-family: 'Roboto';
-font-size: 56px;
-letter-spacing: 2%;
-line-height: 60px;
-}
-h2{
-font-family: 'Roboto';
-font-weight: 700;
-font-size: 36px;
-letter-spacing: 2%;
-}
-h3{
-font-family: 'Roboto';
-font-weight: 500;
-font-size: 20px;
-letter-spacing: 2%;
-}
 
 
 /* 1. header */
@@ -60,18 +41,6 @@ text-transform: uppercase;
 color: #2e2f42;
 }
 
-.link :active {
-  color: var(--active);
-  
-}
-a {
-text-decoration: none;
-font-family: 'Roboto';
-font-weight: 400;
-font-size: 12px;
-line-height: 1.33;
-letter-spacing: 4%;
-}
 /* site nav */
 .site-nav a {
   color: #2e2f42;
@@ -86,8 +55,17 @@ letter-spacing: 4%;
 body {
   font-family: 'Roboto', 'sans-serif';
   color: var(--primary-text-color);
+  
 }
-
+.link{
+  text-decoration: none;
+  font-size: 12px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+}
+.link :active {
+  color: var(--active);
+}
 .contact-info a {
   color: #434455;
 }
@@ -101,20 +79,19 @@ body {
 /* buttons */
 
 .button {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.33;
-  letter-spacing: 4%;
-  border-radius: 4px;
-  cursor: pointer;
-  display: flex;
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 16px;
+line-height: 1.33;
+letter-spacing: 0.04em;
+border-radius: 4px;
+cursor: pointer;
+display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 16px 32px;
 gap: 10px;
 width: 169px;
-height: 56px;
 left: 20px;
 top: 20px;
 }
@@ -159,10 +136,23 @@ flex-grow: 0;
 .section-title.advantages {
   display: none;
 }
-.section-title {
-  color: var(--title-color);
+.section-title-big{
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.02em;
 }
-p {
+.section-title {
+color: var(--title-color);
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 20px;
+letter-spacing: 0.02em;
+}
+.title-portfolio{
+display: none;
+}
+.section-text {
   color: var(--primary-text-color);
 }
 .section {
@@ -174,6 +164,10 @@ p {
 /* hero */
 .hero-title {
   color: var(--background-color);
+  font-family: 'Roboto';
+font-size: 56px;
+letter-spacing: 0.02em;
+line-height: 1,07;
 }
 .hero {
   color: var(--footer-text-color);
