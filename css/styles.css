@@ -13,10 +13,17 @@ web color #4D5AE5 */
   --title-color: #2e2f42;
   --footer-text-color: #e7e9fc;
   --active: #404bbf;
-  --background-color: #ffffff;
+  --body-backgroung-color: #E5E5E5;
+  --hero-text-color:  #ffffff;
+  --logo-primbutton-color: #4D5AE5;
+  --bcg-secbutton-color: #F4F4FD;
 }
 
-
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--body-backgroung-color);
+  }
 /* 1. header */
 
 /* logo */
@@ -24,8 +31,7 @@ web color #4D5AE5 */
   list-style: none;
 }
 .logo{
-  font-family: 'Raleway';
-font-style: normal;
+font-family: 'Raleway', sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.17;
@@ -34,16 +40,21 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 }
 .web {
-  color: #4d5ae5;
+  color: var(--logo-primbutton-color);
 }
 
 .studio {
-color: #2e2f42;
+color: var(--title-color);
 }
 
 /* site nav */
 .site-nav a {
-  color: #2e2f42;
+color: var(--title-color);
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
 }
 .site-nav a:hover {
   color: var(--active);
@@ -51,15 +62,21 @@ color: #2e2f42;
 .site-nav a:focus {
   color: var(--active);
 }
-/* 2. main */
-body {
-  font-family: 'Roboto', 'sans-serif';
-  color: var(--primary-text-color);
-  
+
+.address {
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
 }
+
+/* 2. main */
+
 .link{
-  text-decoration: none;
-  font-size: 12px;
+text-decoration: none;
+font-size: 12px;
 line-height: 1.33;
 letter-spacing: 0.04em;
 }
@@ -67,7 +84,7 @@ letter-spacing: 0.04em;
   color: var(--active);
 }
 .contact-info a {
-  color: #434455;
+  color: var(--primary-text-color);
 }
 .contact-info a:hover {
   color: var(--active);
@@ -79,8 +96,7 @@ letter-spacing: 0.04em;
 /* buttons */
 
 .button {
-font-family: 'Roboto';
-font-weight: 400;
+font-family: 'Roboto', sans-serif;
 font-size: 16px;
 line-height: 1.33;
 letter-spacing: 0.04em;
@@ -97,13 +113,12 @@ top: 20px;
 }
 
 
-
 .button.primary {
-  color: #ffffff;
-  background-color: #4d5ae5;
+  color: var(--background-color);
+  background-color: var(--logo-primbutton-color);
 }
 .button.primary:hover {
-  color: #ffffff;
+  color: var(--background-color);
   background-color: var(--active);
 }
 
@@ -112,7 +127,7 @@ top: 20px;
 }
 
 .button.secondary {
-color: #4d5ae5;
+color: var(--logo-primbutton-color);
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -120,8 +135,8 @@ align-items: center;
 padding: 12px 24px;
 width: 116px;
 height: 48px;
-background: #F4F4FD;
-border: 1px solid #E7E9FC;
+background: var(--bcg-secbutton-color);
+border: 1px solid var(--footer-text-color);
 border-radius: 4px;
 flex: none;
 order: 1;
@@ -129,7 +144,7 @@ flex-grow: 0;
 }
 .button.secondary:hover {
   background-color: var(--active);
-  color: #ffffff;
+  color: var(--hero-text-color);
 }
 
 /* sections */
@@ -137,44 +152,43 @@ flex-grow: 0;
   display: none;
 }
 .section-title-big{
-font-family: 'Roboto';
-font-weight: 700;
+font-family: 'Roboto', sans-serif;
 font-size: 36px;
-letter-spacing: 0.02em;
-}
-.section-title {
-color: var(--title-color);
-font-family: 'Roboto';
-font-weight: 500;
-font-size: 20px;
 letter-spacing: 0.02em;
 }
 .title-portfolio{
 display: none;
 }
+.section-title {
+color: var(--title-color);
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 20px;
+letter-spacing: 0.02em;
+}
 .section-text {
   color: var(--primary-text-color);
-}
-.section {
-  background-color: var(--background-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .team {
-  background-color: #e5e5e5;
+  background-color: var(--bcg-secbutton-color);
 }
 /* hero */
 .hero-title {
-  color: var(--background-color);
-  font-family: 'Roboto';
+  color: var(--hero-text-color);
+  font-family: 'Roboto', sans-serif;
 font-size: 56px;
 letter-spacing: 0.02em;
 line-height: 1,07;
 }
 .hero {
   color: var(--footer-text-color);
-  background-color: #2e2f42;
+  background-color: var(--title-color);
 }
 .footer {
-  background-color: #2e2f42;
+  background-color:var(--title-color);
 }
 .footer p {
   color: var(--footer-text-color);
