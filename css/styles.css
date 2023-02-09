@@ -135,8 +135,8 @@ top: 20px;
 }
 
 .button.secondary {
-  color: #4d5ae5;
-  display: flex;
+color: #4d5ae5;
+display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
