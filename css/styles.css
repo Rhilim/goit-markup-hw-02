@@ -31,13 +31,8 @@ body {
 .list {
   list-style: none;
 }
-a{
-font-family: 'Roboto', sans-serif;
-color:var(--title-color)
-font-size: 18px;
-line-height: 1.17;
-letter-spacing: 0.03em;
-}
+
+
 .logo{
 font-family: 'Raleway', sans-serif;
 font-weight: 800;
@@ -47,7 +42,6 @@ text-transform: uppercase;
   color: var(--logo-primbutton-color);
 }
 
-
 /* site nav */
 .site-nav a {
 color: var(--title-color);
@@ -56,9 +50,7 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
-.site-nav a:hover {
-  color: var(--active);
-}
+.site-nav a:hover,
 .site-nav a:focus {
   color: var(--active);
 }
@@ -73,22 +65,26 @@ color: var(--primary-text-color);
 
 /* 2. main */
 
+
 .link{
+font-family: 'Roboto', sans-serif;
+color:var(--title-color)
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
 text-decoration: none;
 }
-.link :active {
-  color: var(--active);
+.link:active{
+  color: var(--active)
 }
 .contact-info a {
   color: var(--primary-text-color);
 }
-.contact-info a:hover {
-  color: var(--active);
-}
+.contact-info a:hover,
 .contact-info a:focus {
   color: var(--active);
 }
-
+ 
 /* buttons */
 
 .button {
@@ -104,29 +100,24 @@ cursor: pointer;
   color: var(--background-color);
   background-color: var(--logo-primbutton-color);
 }
-.button.primary:hover {
+.button.primary:hover,
+.button.primary:focus {
   color: var(--background-color);
   background-color: var(--active);
 }
 
-.button.primary:focus {
-  background-color: var(--active);
-}
 
 .button.secondary {
 color: var(--logo-primbutton-color);
 padding: 12px 24px;
 background: var(--bcg-secbutton-color);
 }
-.button.secondary:hover {
-  background-color: var(--active);
-  color: var(--hero-text-color);
-}
+.button.secondary:hover,
 .button.secondary:focus {
   background-color: var(--active);
   color: var(--hero-text-color);
 }
-
+ 
 /* sections */
 .section-title.advantages {
   display: none;
